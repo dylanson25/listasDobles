@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>App de inventario</title>
+</head>
+
+<body>
+    <form method="POST" action="main.js">
+        <h1>App de inventario</h1>
+        <input id="iptCod" type="number" name="Codigo" placeholder="Codigo">
+        <input id="iptNom" type="text" name="Nombre" placeholder="Nombre">
+        <br>
+        <input id='iptDes' type="text" name="Descripcion" placeholder="Descripción">
+        <input id="iptCant" type="number" name="Cantidad" placeholder="Cantidad">
+        <br>
+        <input id="iptCost" type="number" name="Costo" placeholder="Costo">
+        <br>
+        <input type="button" id="btnAgregar" name="agregarProduct" value="Agregar"/>
+        <br>
+        <br>
+        <input id='iptCodeB'type="number" name="borrar" placeholder="Borrar producto por código">
+        <br>
+        <input type="button" id="btnBorrar" name="borrarProduct" value="Borrar"/>
+        <br>
+        <br>
+        <input id='iptBuscar'type="number" name="buscarP" placeholder="Buscar producto por código">
+        <br>
+        <input type="button" id="btnBuscar" name="buscarProduct" value="Buscar"/>
+        <br>
+        <input type="button" id="btnEliminarPrimero" name="EliminarPrimero" value="Eliminar Primer elemento"/>
+        <br>
+        <input type="button" id="btnRecuperar" name="recuperar" value="Recuperar los productos"/>
+        <br>
+        <ul id="listaForm"></ul>
+        <br>
+        <br>
+        <input type="button" id="btnRinverso" name="recuperarInverso" value="Recuperar productos inverso"/>
+        <ul id="listaForm2"></ul>
+    </form>
+    <script src="main.js"></script>
+</body>
+
+</html>
